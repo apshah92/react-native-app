@@ -1,0 +1,1 @@
+export const SITE_DATA_URL = 'https://s3.amazonaws.com/decom_uploads/external/sites.json';
