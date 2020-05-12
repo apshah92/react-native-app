@@ -2,7 +2,7 @@
 React Native App displaying list of sites and site details using React Context.
 
 
-# To Run
+## To Run
 ```
 cd react-native-app
 npx react-native start
