@@ -6,9 +6,9 @@ import { NativeViewGestureHandler } from 'react-native-gesture-handler';
 
 export default SiteLink = props => {
     //console.log(props.navigation);
-    const  { name, address, image } = props.siteData ;
+    const  { id, name, address, image } = props.siteData ;
     return (
-        <TouchableOpacity onPress={() => props.navigation.navigate('Site Details', props.siteData )} >
+        <TouchableOpacity testID={`site-link-` + id} onPress={() => props.navigation.navigate('Site Details', props.siteData )} >
             <View style={styles.container}  >
                 <Image source={{uri: image}} style={{width: 70, height: 70}} />
                 <View style >
@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
         marginTop: 20,
         padding: "3%",
         borderColor: 'black',
-        borderWidth: 1
+        borderWidth: 1,
     },
     imageContainer: {
         flex : 0.3,

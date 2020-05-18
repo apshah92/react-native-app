@@ -20,7 +20,7 @@ class SiteList extends React.Component {
         //console.log(this.props.navigation);
         return (
             <> 
-                <ScrollView  style={styles.container}>
+                <ScrollView  id="site-list"  style={styles.container}>
                     {allSites.map( siteData => <SiteLink  key={siteData.id} siteData={siteData} navigation={this.props.navigation}/>)}
                 </ScrollView>        
             </>
@@ -42,6 +42,7 @@ export default (props) => (
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        flexDirection:  'column',        
+        flexDirection:  'column',
+        backgroundColor: '#ffffcc',
     }
 })
